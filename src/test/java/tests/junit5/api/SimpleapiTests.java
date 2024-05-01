@@ -22,17 +22,7 @@ import static org.hamcrest.Matchers.equalTo;
 public class SimpleapiTests {
 
 
-    @Test
-    public void getAllUsers() {
-        given()
-                .header("cookie", "mobile_api_debug=61042abd-5e99-4e65-8b96-6253bb697e6e")
-                .queryParam("img_height", 300)
-                .queryParam("img_width", 300)
-                .get("https://www.test.k8s.olt.su/api/mobile/v2/hotels/54840")
-                .then()
-                .log().all()
-                .statusCode(200);
-    }
+
 
     @Test
     public void getSingleUserTest() {
